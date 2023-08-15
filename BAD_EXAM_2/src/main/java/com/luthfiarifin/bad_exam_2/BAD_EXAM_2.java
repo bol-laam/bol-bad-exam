@@ -74,11 +74,11 @@ public class BAD_EXAM_2 {
             String memberLevel = (String) levelComboBox.getSelectedItem();
 
             if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
-                JOptionPane.showMessageDialog(frame, "All fields are required.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(frame, "Semua fields harus diisi.", "Error", JOptionPane.ERROR_MESSAGE);
             } else if (!password.equals(confirmPassword)) {
-                JOptionPane.showMessageDialog(frame, "Passwords do not match.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(frame, "Password tidak sama.", "Error", JOptionPane.ERROR_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(frame, "Registration successful:\nUsername: " + username + "\nGender: " + gender + "\nMember Level: " + memberLevel, "Success", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(frame, "Registrasi berhasil:\nUsername: " + username + "\nGender: " + gender + "\nMember Level: " + memberLevel, "Success", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
